@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
@@ -151,9 +152,9 @@
 			label = "Custom";                                          \
 			bindings = <                                               \
 				LEADING_NONES                                          \
-				&kp C_MUTE &kp INS   &kp C_VOL_UP  &none               \
+				&kp C_MUTE &kp INS   &ext_power EP_ON  &none               \
 				MIDDLE_NONES                                           \
-				&sk RSHFT  &kp PSCRN &kp C_VOL_DN  &mo LAYER_ID_CUSTOM \
+				&bootloader  &kp PSCRN &ext_power EP_OFF  &mo LAYER_ID_CUSTOM \
 				TRAILING_NONES                                         \
 			>;                                                         \
 		};
@@ -187,10 +188,10 @@
 #define ARDUX_BASE_O O
 #define ARDUX_COMBO_N N
 #if ARDUX_COLEMAK
-#define ARDUX_BASE_A T
-#define ARDUX_BASE_R S
-#define ARDUX_BASE_T R
-#define ARDUX_BASE_S A
+#define ARDUX_BASE_A A
+#define ARDUX_BASE_R R
+#define ARDUX_BASE_T S
+#define ARDUX_BASE_S T
 #define ARDUX_BASE_E N
 #define ARDUX_BASE_Y E
 #define ARDUX_BASE_I I

@@ -10,6 +10,7 @@
 
 // Left/Right
 #define ARDUX_RIGHT 1
+#define ARDUX_COLEMAK 1
 
 // ARTS Row
 #define KEY_A 0
