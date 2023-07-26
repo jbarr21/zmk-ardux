@@ -4,6 +4,10 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: zmk-ardux
       url-base: https://github.com/arduxio
+    - name: urob
+      url-base: https://github.com/urob
+    - name: jbarr21
+      url-base: https://github.com/jbarr21
   projects:
     - name: zmk
       remote: zmkfirmware
